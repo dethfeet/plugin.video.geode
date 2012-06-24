@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.geode" name="Geo.de" version="0.0.1" provider-name="dethfeet">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="xbmc.gui" version="2.11"/>
+    <import addon="script.module.brightcove" version="0.1"/>
+    <import addon="script.module.pyamf" version="0.6.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>de</language>
+    <summary lang="de">geo.de Videos</summary>
+  <description>geo.de Videos</description>
+  <description lang="de">Die beste Unterhaltung für die Mittagspause: Wissenstests, Frage des Tages, E-Cards mit spektakulären Fotos sowie der Reise-Podcast GEOaudio.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
