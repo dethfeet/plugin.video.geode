@@ -28,7 +28,8 @@ def showPage(pageNumber):
 	page = brightcove.find_all_playlists(page_size=pageSize, get_item_count=True, page_number=pageNumber)
 	
 	for playlist in page.items:
-		addDirectoryItem(playlist.name,{"action":"showPlaylist","playlistId":playlist.id},playlist.thumbnailURL)
+		pic = unicode(playlist.thumbnailURL)
+		addDirectoryItem(playlist.name,{"action":"showPlaylist","playlistId":playlist.id},pic)
 		
 	if page.total_count > pageSize*(pageNumber+1):
 		addDirectoryItem("Mehr anzeigen",{"action":"showPage","pageNumber":pageNumber+1},"")
